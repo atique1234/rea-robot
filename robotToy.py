@@ -121,11 +121,11 @@ class Robot(object):
 			
 		elif command=='MOVE':
 			if tempDirection == 'NORTH':
-				locY=int(locY)-1
+				locY=int(locY)+1
 			elif tempDirection == 'EAST':
 				locX=int(locX)+1
 			elif tempDirection == 'SOUTH':
-				locY=int(locY)+1
+				locY=int(locY)-1
 			else:
 				locX=int(locX)-1
 		elif command=='REPORT':
